@@ -1,0 +1,284 @@
+/* ===== Font Link ===== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Kanit:wght@400;500&family=Montserrat+Alternates:wght@600&family=Noto+Sans+Display:wght@200&family=Open+Sans:wght@400;500;600;700&family=Oswald&family=Pacifico&family=Roboto+Mono:wght@600&family=Roboto:wght@400;500;700;900&family=Rowdies&family=Rubik+Mono+One&family=Rubik:wght@700&display=swap');
+
+/* Root Styles */
+
+
+:root {
+  /* Text Color Variables */
+  --color-a: #14213d;
+  --color-other: #2b2d42;
+  --color-black: #000814;
+  --color-white: #ffffff;
+  --color: #2b2d42;
+  --color-title2: #fb5607;
+  --color01: #780000;
+  --color03: #06d6a0;
+}
+
+:root {
+  /* Color Variables */
+  --blue: #3498db;
+  --green: #27ae60;
+  --purple: #9b59b6;
+  --orange: #f39c12;
+  --gradient: linear-gradient(90deg, var(--blue), var(--green));
+}
+
+/* CSS for the popular container */
+.popular-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  
+  /* CSS for the popular language cards */
+  .popular-language-card {
+    width: 280px;
+    height: 280px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    perspective: 1000px;
+  }
+
+  
+  /* CSS for the card contents */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .language-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 16px;
+    color: #777;
+  }
+
+.more-lang-big .more-p{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -25px;
+    font-size: 12px;
+    color: #333;
+}
+
+  .more-lang-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .more-lang-card {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .more-lang-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .more-lang-img{
+    width: 200px;
+    margin-bottom: 15px;
+  }
+  
+  .more-lang-card-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .more-lang-card-description {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .learn-more-button {
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color03);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .learn-more-button:hover {
+    background: transparent;
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+  }
+  
+  .practice-website {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  
+  .practice-website-card {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+  }
+  
+
+  .practice-website-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    z-index: -1;
+    transition: background-color 0.3s;
+  }
+  
+  .practice-website-card:hover::before {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .practice-website-card h1,
+  .practice-website-card p {
+    z-index: 1;
+  }
+  
+  .para-web{
+    text-align: center;
+    font-size: 15px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .practice-website-card:nth-child(1) {
+    background: url(/courses-images/javascript.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+  }
+  
+  
+  .practice-website-card:hover {
+    background: transparent;
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+  }
+  
+  
+  .practice-website-card:nth-child(2) {
+    background: url(/courses-images/css-trick.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+  }
+  
+  .practice-website-card:nth-child(3) {
+    background: url(/courses-images/Reactjs.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+  }
+  
+  .practice-website-card:nth-child(4) {
+    background: url(/courses-images/chatgpt.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .practice-website-card:hover {
+    transform: scale(1.1);
+    color: var(--color-black);
+  }
+  
+  .practice-website-card h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+  
+  .practice-website-card p {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .practice-website-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: var(--color-title2);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .practice-website-btn:hover {
+    background: transparent;
+    border: 1px solid var(--color-black);
+    color: #000;
+    transform: scale(1.05);
+  }
+  
+
+  .practice-website-card span {
+    margin-left: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+
+
+  @media (max-width:695px){
+    .more-lang-container{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+  }

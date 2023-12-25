@@ -1,0 +1,218 @@
+/* ===== Font Link ===== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Kanit:wght@400;500&family=Montserrat+Alternates:wght@600&family=Noto+Sans+Display:wght@200&family=Open+Sans:wght@400;500;600;700&family=Oswald&family=Pacifico&family=Roboto+Mono:wght@600&family=Roboto:wght@400;500;700;900&family=Rowdies&family=Rubik+Mono+One&family=Rubik:wght@700&display=swap');
+
+/* Root Styles */
+
+
+:root {
+  /* Text Color Variables */
+  --color-a: #14213d;
+  --color-other: #2b2d42;
+  --color-black: #000814;
+  --color-white: #ffffff;
+  --color: #2b2d42;
+  --color-title2: #fb5607;
+  --color01: #780000;
+  --color03: #06d6a0;
+}
+
+:root {
+  /* Color Variables */
+  --blue: #3498db;
+  --green: #27ae60;
+  --purple: #9b59b6;
+  --orange: #f39c12;
+  --gradient: linear-gradient(90deg, var(--blue), var(--green));
+}
+
+.about-container {
+  /* Sets the width to 80% of its containing element, centers it horizontally with auto margin */
+  width: 80%;
+  margin: 0 auto;
+  /* Creates a flex container with centered alignment */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* Adds styling for the container */
+  border: 1px solid #ddd;
+  border-top-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  padding: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.about-img {
+  /* Sets the width of the image */
+  width: 250px;
+  /* Adds rounded corners to the image */
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.about-me-title h1 {
+  /* Adds styling for the title heading */
+  font-size: 25px;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.about-me-title h2 {
+  /* Adds styling for the subtitle heading */
+  font-family: 'Cinzel Decorative', cursive;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-paragraph {
+  /* Adds styling for the paragraph text */
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.about-cards-container {
+  /* Creates a flex container with centered alignment */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-subtitle {
+  /* Adds styling for the subtitle */
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.about-subtitle span {
+  /* Adds styling for a specific span element within the subtitle */
+  font-family: 'Cinzel Decorative', cursive;
+  color: var(--color-title2);
+}
+
+.about-card {
+  /* Adds styling for the cards */
+  width: 200px;
+  height: 70px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.about-card:hover {
+  /* Adds styling when hovering over the card */
+  border: 1px solid var(--color-black);
+  background: transparent;
+  transition: all 0.5s ease;
+  scale: 1.1;
+}
+
+.about-skill-icon {
+  /* Adds styling for the skill icons */
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.about-skill-text {
+  /* Adds styling for the skill text */
+  font-size: 16px;
+}
+
+#html {
+  /* Adds color styling for the HTML skill */
+  color: #E34C26;
+}
+
+#css {
+  /* Adds color styling for the CSS skill */
+  color: #2965f1;
+}
+
+#js {
+  /* Adds color styling for the JavaScript skill */
+  color: #F0DB4F;
+}
+
+#react {
+  /* Adds color styling for the React skill */
+  color: #61DAFB;
+}
+
+.about-social-links a {
+  /* Centers the social links */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-social-links {
+  /* Adds styling for the social links container */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.about-social-links h2 {
+  /* Adds styling for the social links title */
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Cinzel Decorative', cursive;
+  margin-bottom: 10px;
+}
+
+.about-social-links span {
+  /* Adds styling for a specific span element within the social links */
+  font-family: 'Cinzel Decorative', cursive;
+  color: var(--color-title2);
+}
+
+.social-link {
+  /* Adds styling for the social links */
+  display: inline-block;
+  margin: 10px;
+  padding: 12px;
+  color: #2965f1;
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-link i {
+  /* Aligns the social link icon vertically */
+  vertical-align: middle;
+}
+
+.social-link i:hover {
+  /* Adds scaling effect when hovering over the social link icon */
+  scale: 1.5;
+}
+
+#linkdin {
+  /* Adds color styling for the LinkedIn social link */
+  color: #0e76a8;
+}
+
+#git {
+  /* Adds color styling for the GitHub social link */
+  color: #333;
+}
+
+#whatsapp {
+  /* Adds color styling for the WhatsApp social link */
+  color: #25d366;
+}
+
+#youtube {
+  /* Adds color styling for the YouTube social link */
+  color: #ff0000;
+}
